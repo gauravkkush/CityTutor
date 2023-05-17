@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Notification";
+    Layout = "~/Views/Shared/ganraladmin.cshtml";
+}
+
+<div class="col-sm-12">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 noti">
+        <div class="h1 text-center"></div>
+        <form action="Notification" method="post">
+            <textarea class="form-control" style="height:80px;" name="news"></textarea><br />
+            <input type="submit" class="btn btn-success" value="Add Notification" />
+        </form> 
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+<div class="col-sm-12" style="margin-top:2%;">
+    <table class="table table-hover">
+            <tr>
+                <th>SR NO</th>
+                <th>NOTIFICATION</th>
+                <th>DATE</th>
+                <th>DELETE</th>
+            </tr>
+            @Html.Raw(ViewBag.news)
+    </table>
+</div>

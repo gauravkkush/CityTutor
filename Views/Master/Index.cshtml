@@ -1,0 +1,101 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/GeneralMaster.cshtml";
+}
+<style>
+        .head 
+        {
+            min-height:50px;
+            background:url('../Content/images/b6.jpg');
+            background-attachment:fixed;
+        }
+            .head1 
+            {
+                min-height:50px;
+                background:rgba(0,0,0,.65);
+                color:white;
+                text-align:center;
+                font-size:35px;
+                padding-top:0.5%;
+            }
+    .block1, .block2, .block3, .block4
+    {
+        min-height:220px;
+        background:red;
+        border: 5px solid white;
+        border-radius:12px;
+        padding:0.2%;
+        text-align:center;
+        font-size:35px;
+        font-family:'Adobe Song Std';
+    }
+        .menu1 a
+        {
+            text-decoration:none;
+            color:black;
+        }
+            .menu1 a:hover            {
+                background:#ed1dcf;
+            }
+    .block1 
+    {
+        background: red;
+    }
+    .block2 
+    {
+        background:#b71edc;
+    }
+    .block3
+    {
+        background:#808080;
+    }
+    .block4
+    {
+       background:#1b7eb7;
+    }
+    .menu1 h1  
+    {
+        text-align:center; 
+               
+    }
+   .menu1 .fa 
+    {
+        font-size:70px;
+        color:white;
+    }
+</style>
+<div class="col-sm-12 head">
+<div class="row">
+    <div class="col-sm-12 head1">DASH<b style="color:red;"><span class="fa fa-user"></span></b>BOARD</div>   
+</div>
+</div>
+<div class="col-sm-12">
+    <div class="row menu1">
+        <div class="col-sm-12">
+            <a href="~/Master/TutionLeads">
+                <div class="col-sm-3 block4">
+                <h1 class="fa fa-list"></h1>
+                <h2>TUITION LEADS</h2>
+            </div>
+            </a>
+            <a href="~/Master/RequestSent">
+                <div class="col-sm-3 block3">
+                <h1 class="fa fa-pencil"></h1>                 
+                <h2> REQUEST SENT</h2>
+            </div>
+            </a>
+            <a href="~/Master/ChangePassword">
+                <div class="col-sm-3 block2">
+                <h1 class="fa fa-key"></h1>
+                <h2>CHANGE PASSWORD</h2>
+            </div>
+            </a>
+            <a href="~/Master/LogOut">
+                <div class="col-sm-3 block1">
+                <h1 class="fa fa-power-off"></h1>
+                <h2>LOGOUT</h2>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>

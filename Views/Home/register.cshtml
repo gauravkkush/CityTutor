@@ -1,0 +1,236 @@
+﻿@{
+    ViewBag.Title = "register";
+    Layout = "~/Views/Shared/general.cshtml";
+}
+<script>
+            $(document).ready(function(){
+                $("#agree").change(function(){
+                    var a=$("#agreed").prop("disabled");
+                    if(a==true)
+                    {
+                        $("#agreed").prop("disabled",false);
+                    }
+                    else
+                    {
+                        $("#agreed").prop("disabled",true);
+                    }
+                })
+            })
+</script>
+<style>
+    .head {
+        min-height:50px;
+        background:url('../Content/images/b6.jpg');
+        background-attachment:fixed;
+    }
+    .head1 {
+        min-height:50px;
+        background:rgba(0,0,0,.65);
+        color:white;
+        text-align:center;
+        font-size:25px;
+        padding-top:0.5%;
+    }
+    .register 
+    {
+        min-height:500px;
+        background:rgba(0, 0, 0, 0.79);
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        font-family:Arial;
+        background-attachment:fixed;
+    }
+    form {
+        padding-top:3%;
+        padding-bottom:3%;
+    }
+    input 
+    {
+        height:40px;
+        width:350px;
+        border-radius:10px;
+    }
+    select 
+    {
+        height:40px;
+        width:350px;
+        border-radius:10px;
+    }
+    .btn 
+    {
+        height:40px;
+        width:120px;
+        text-align:center;
+        border-radius:20px;
+        margin-top:2%;
+        margin-left:2%;
+    }
+    .gen { color:white;
+           margin-top:2%;
+    }
+    .genin
+    {
+        height:15px;
+        width:15px;
+        text-align:center;
+        border-radius:24px;
+        margin-top:0.5%;
+        color:white;
+    }
+    label 
+    {
+        color:white;
+        margin-top:2%;
+    }
+</style>
+
+<div class="col-sm-12 head">
+<div class="row">
+    <div class="col-sm-12 head1">SIGN <b style="color:red;">UP </b>AS <b style="color:red;">TEACHER</b></div>
+</div>
+</div>
+<div class="col-sm-12 register" >
+    <form method="post" enctype="multipart/form-data"> 
+    <div class="row">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+            <center>
+                <table>
+                    <tr>
+                        <td><label for="input">NAME :</label><br /><input type="text" name="name" placeholder="Enter Your Name" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input">CONTACT NO :</label><br /><input type="tel" name="mob" placeholder="Contact NO." /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="select">TUTION LEVEL :</label><br />
+                            <select name="level" >
+                                <option>--TUTION LEVEL--</option>
+                                <option>PRIMARY</option>
+                                <option>JUNIOR</option>
+                                <option>SENIOR SECONDORY</option>
+                                <option>INTERMEDIATE</option>
+                                <option>DIPOMA</option>
+                                <option>GRADUATION</option>
+                                <option>POST GRADUATION</option>
+                                <option>COMPETITION</option>
+                             </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="select">CITY :</label><br />
+                            <select name="city">
+                                <option>--CITY--</option>
+                                <option>SHAHJAHANPUR</option>
+                                <option>LUCKNOW</option>
+                                <option>BAREILLY</option>
+                                <option>JALALABAD</option>
+                                <option>ROZA</option>
+                             </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="input">EXPERIENCE :</label><br />
+                            <input type="text" name="Experience" placeholder="Experience" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="input">STATUS :</label><br /><input type="text" name="status"  placeholder="Current Status" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input">TIMING SESSION :</label><br /><input type="text" name="session"  placeholder="Timing Session" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input">PROFILE PICTURE :</label><br /><input type="file" name="pic"style="background:white;"/></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="input">PASSWORD</label><br />
+                            <input type="password" name="password" placeholder="Enter Password" />
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <div class="col-sm-4">
+            <center>
+                <table>
+                    <tr>
+                        <td><label for="input">E-MAIL :</label><br />
+                            <input type="email" name="mail"  placeholder="example@email.com" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input">AGE :</label><br />
+                            <input type="text" placeholder="Enter Your Age" name="age" />
+                        </td>
+                    </tr>
+                    <tr >
+                        <td><label for="input">GENDER :</label><br />
+                            <select name="gender">
+                                <option>----GENDER----</option>
+                                <option>MALE</option>
+                                <option>FEMALE</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="input">LOCALITY / AREA :</label><br />
+                            <input type="text" name="area"  placeholder="LOCALITY/AREA" /><br /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input">EDUCATION MEDIUM :</label><br />
+                            <select name="medium">
+                                <option>--EDUCATION MEDIUM--</option>
+                                <option>CBSE</option>
+                                <option>ICSE</option>
+                                <option>UP BOARD(HINDI)</option>
+                                <option>UP BOARD(ENGLISH)</option>
+                                <option>BTEUP</option>
+                                <option>AKTU</option>
+                             </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="input">LANGUAGE :</label><br />
+                            <select name="language">
+                                <option>--Speaking Language--</option>
+                                <option>HINDI</option>
+                                <option>ENGLISH</option>
+                                <option>TAMIL</option>
+                                <option>GUJRATI</option>
+                                <option>MARATHI</option>
+                                <option>URDU</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="input">QUALIFICATION :</label><br />
+                            <input type="text" name="qualification"  placeholder="Highest Qualification" /></td>
+                    </tr>
+                    <tr>
+                        <td><label for="input">MODE OF TUITION :</label><br />
+                           <select name="mode">
+                            <option>--MODE OF TUTION--</option>
+                            <option>Online</option>
+                            <option>Offline</option>
+                        </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <br /><br />
+        <p style="color:white;"><input type="checkbox" id="agree" style="height:12px;width:12px;margin-top:2%;"/> I agreed to all the Terms & Conditions.</p>
+                        </td>
+                    </tr>
+                </table>
+            </center>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+    <center>
+        <input type="submit" disabled="true" value="Register Now"  class="btn btn-success" id="agreed"/>
+    <input type="button" value="Reset" class="btn" />
+    </center><br />
+    <center><p style="color:white;">Already have an account? <a href="~/Home/login">Log In</a></p></center>
+        </form>
+</div>

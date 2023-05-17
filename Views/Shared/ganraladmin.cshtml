@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+        <script src="~/Content/js/jquery.js"></script>
+        <script src="~/Content/js/bootstrap.min.js"></script>
+        <title>@ViewBag.Title</title>
+        <style>
+            .top {
+                min-height: 45px;
+                background: #e7eaed;
+                text-align: center;
+                line-height: 45px;
+                font-size: 20px;
+                font-family: 'Comic Sans MS';
+            }
+            .header {background:black;
+            }
+            .logo {
+            font-family: 'Monotype Corsiva';
+            font-size: 35px;
+            color: white;
+        }
+
+            .logo span {
+                color: red;
+                font-size: 35px;
+            }
+            .logo a , .logo a:hover
+            {
+                text-decoration:none;
+                color:white;
+            }
+
+             .menu {
+            display:inline;
+            height:40px;
+        }
+        #menu {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            text-align:center;
+        }
+            #menu ul li a {
+                text-decoration:none;
+                color:white;
+            }
+            #menu ul li a:hover {
+                transition: all ease 1s;
+                background:#e60651;
+                border-radius:10px;
+            }
+            #menu ul ul li{
+            height:30px;
+            }
+            #menu ul ul
+            {
+                margin-right:-80px;
+                display: none;
+                background:black;
+                min-height:40px;
+            }
+            .mgmt li a:hover {
+                transition: all ease 1s;
+                background:#e60651;
+                border-radius:10px;
+            }
+            #menu ul li:hover ul
+            {
+                display: block;
+            } 
+
+            .bfooter
+            {
+                min-height:50px;
+                background:black;
+                color:white;
+            }
+       
+        </style>
+    </head>
+    <body>
+        <div class="col-sm-12 outer">
+            <div class="row">
+                <div class="col-sm-12 top">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4">* <span style="color:red;">WELCOME </span>TO <span style="color:red;">ADMIN </span>PANNEL *</div>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
+                <div class="col-sm-12 header">
+                    <div class="col-sm-3 logo">
+                        <a href="Index"><span class="fa fa-graduation-cap"></span>Tut<span>ors</span>Ad<span>da</span></a>
+                    </div>
+                    <div class="col-sm-9 menu">
+                        <nav class="navbar navbar-default" id="menu">
+                              <div class="container-fluid">
+                                   <div class="navbar-header">
+                                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                  </button>
+                                </div>
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                  <ul class="nav navbar-nav navbar-right">
+                                    <li><a href="~/Admin/Index">DASHBOARD</a></li>
+                                      <li><a href="~/Admin/Notification">ADD NOTIFICATION</a></li>
+                                      <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MANAGEMENT<span class="caret"></span></a>
+                                          <ul class="dropdown-menu mgmt">
+                                              <li><a href="~/Admin/MasterMgmt">MASTER MANAGEMENT</a></li>
+                                              <li><a href="~/Admin/LeadsMgmt">LEADS MANAGEMENT</a></li>
+                                              <li><a href="~/Admin/RequestMgmt">REQUEST MANAGEMENT</a></li>
+                                              <li><a href="~/Admin/Gallerymgmt">GALLERY MANAGEMENT</a></li>
+                                          </ul>
+                                      </li>
+                                      <li><a href="~/Admin/Password">CHANGE PASSWORD</a></li>
+                                      <li><a href="~/Admin/LogOut">LOGOUT</a></li>
+                                  </ul>
+                                </div><!-- /.navbar-collapse -->
+                              </div><!-- /.container-fluid -->
+                        </nav>
+                    </div>
+                </div>
+                <div class="col-sm-12 content">
+                    <div class="row">
+                @RenderBody();
+                        </div>
+                    </div>
+                <div class="col-sm-12 bfooter">
+                    <center>
+                    <p style="padding-top:1%; text-decoration:none; float:left; display:inline;">
+                        Copyright &copy;2019, Techpile Technologies PVT. LTD.
+                    </p>
+                    <p style="padding-top:1%; text-decoration:none; float:right; display:inline;">
+                        Designed & Devloped By :<a href="mailto:kkushgaurav@gmail.com?subject= Query Regarding Website"> Gaurav Kushwaha</a> <br />
+                    </p>
+                    <p style="padding-top:1%; text-decoration:none; display:block;">
+                        <a href="#">Terms Of Use.</a> | <a href="#">Privacy Policy-Revised</a> | All Rights Reserved
+                    </p>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+

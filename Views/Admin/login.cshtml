@@ -1,0 +1,79 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta name="format-detection" content="telephone=no"/>
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <title>login</title>
+    <style>
+    .head {
+        min-height:50px;
+        background:url('../Content/images/b6.jpg');
+        background-attachment:fixed;
+    }
+    .head1 {
+        min-height:50px;
+        background:rgba(0,0,0,.65);
+        color:white;
+        text-align:center;
+        font-size:25px;
+        padding-top:0.5%;
+    }
+    .login 
+    {
+        min-height:300px;
+        background:rgba(0, 0, 0, 0.79);
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+    }
+    form 
+    {
+        margin-top:10%;
+        font-family:'Arial Nova';
+    }
+    input 
+    {
+        height:40px;
+        text-align:center;
+        border-radius:24px;
+        margin-top:2%;
+    }
+    
+</style>
+</head>
+<body>
+    <div class="col-sm-12" style="margin:10% auto;">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <div class="col-sm-12 head">
+            <div class="row">
+                <div class="col-sm-12 head1"><span style="color:red;">LOGIN</span> AS<span style="color:red;"> ADMIN</span></div>
+            </div>
+            </div>
+            <div class="col-sm-12 login">
+                        <center>
+                            <form action="login" method="post">
+                                  <input type="text" name="username" class="form-control" placeholder="Username/Mobile/Email"><br />
+                                  <input type="password" name="password" class="form-control" placeholder="Password"><br />
+                                  <input type="checkbox" style="height:12px; width:10px; margin-top:2%;"/> <span style="color:white;">Remember me</span><br />
+                                  <input type="submit" class="btn btn-success" value="Login"><br /><br />
+                                <a href="#" style="color:white;">Forgot Password?</a>
+                            </form>
+                        </center>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</body>
+</html>

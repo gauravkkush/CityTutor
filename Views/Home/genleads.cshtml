@@ -1,0 +1,115 @@
+﻿@{
+    ViewBag.Title = "genleads";
+    Layout = "~/Views/Shared/general.cshtml";
+}
+<style>
+    .head {
+        min-height:50px;
+        background:url('../Content/images/b6.jpg');
+        background-attachment:fixed;
+    }
+    .head1 {
+        min-height:50px;
+        background:rgba(0,0,0,.65);
+        color:white;
+        text-align:center;
+        font-size:25px;
+        padding-top:0.5%;
+    }
+    .genleads {
+        background:rgba(0, 0, 0, 0.91);
+    }
+    .form {
+        margin:50px auto;
+        min-height:300px;
+        background:transparent;
+    }
+    input, select {
+        margin-top:1%;
+    }
+    .btn { height:35px;
+           width:130px;
+           border:1px solid black;
+           margin-top:2%;
+    }
+</style>
+<div class="col-sm-12 head">
+<div class="row">
+    <div class="col-sm-12 head1">GENRATE<b style="color:red;"> LEADS</b></div>
+</div>
+</div>
+<div class="col-sm-12 genleads">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 form">
+        <div class="row">
+                <form method="post" autocomplete="on">
+                    <div>
+                        <select class="form-control" name="type" required>
+                            <option>Looking For</option>
+                            <option>HOME TUTOR</option>
+                            <option>TUITION POINT</option>
+                            <option>ONLINE</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" placeholder="Name" name="name" autocomplete required/>
+                    </div>
+                    <div>
+                        <input type="email" class="form-control" placeholder="Email" name="mail" autocomplete="on" required />
+                    </div>
+                    <div>
+                        <input type="tel" class="form-control" placeholder="Contact No." name="mob" autocomplete="on" required />
+                    </div>
+                    <div>
+                        <select class="form-control" name="cls" required>
+                            <option>Class</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>Diploma</option>
+                            <option>Graduation</option>
+                            <option>Post Graduation</option>
+                            <option>PG Diploma</option>
+                            <option>Comptition Exams</option>
+                            <option>Engineering Entrance Exams</option>
+                            <option>Medical Entrance Exams</option>
+                            <option>CA Entrance Exams</option>
+                            <option>Others</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="form-control" name="medium" required>
+                            <option>Education Medium</option>
+                            <option>Hindi</option>
+                            <option>English</option>
+                        </select>
+                    </div>
+                    <div>
+                        <select class="form-control" name="city" required>
+                            <option>City</option>
+                            <option>Shahjahanpur</option>
+                            <option>Bareilly</option>
+                            <option>Lucknow</option>
+                            <option>Sitapur</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="text" class="form-control" name="area" placeholder="Area / Location" required />
+                    </div>
+                    <div>
+                        <center><input type="submit" class="btn btn-success" value="Genrate Leads" /></center>
+                    </div>
+                </form>
+            </div>
+    </div>
+    <div class="col-sm-4"></div>
+</div>

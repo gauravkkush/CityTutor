@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "login";
+    Layout = "~/Views/Shared/general.cshtml";
+}
+<style>
+    .head {
+        min-height:50px;
+        background:url('../Content/images/b6.jpg');
+        background-attachment:fixed;
+    }
+    .head1 {
+        min-height:50px;
+        background:rgba(0,0,0,.65);
+        color:white;
+        text-align:center;
+        font-size:25px;
+        padding-top:0.5%;
+    }
+    .login 
+    {
+        min-height:300px;
+        background:rgba(0, 0, 0, 0.79);
+        background-size:100% 100%;
+        background-repeat:no-repeat;
+        background-attachment:fixed;
+    }
+    form 
+    {
+        padding-top:15%;
+        font-family:'Arial Nova';
+    }
+    .in
+    {
+        height:40px;
+        width:350px;
+        text-align:center;
+        border-radius:24px;
+        margin-top:2%;
+    }
+    input 
+    {
+        margin-top:2%;
+    }
+</style>
+
+<div class="col-sm-12 head">
+<div class="row">
+    <div class="col-sm-12 head1"><span class="fa fa-user" style="color:red;"></span> LOG<b style="color:red;">IN</b></div>
+</div>
+</div>
+<div class="col-sm-12 login">
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4">
+            <center>
+                <form action="login" method="post">
+                      <div>
+                            <input type="text" name="username" class="in" placeholder="Username/Mobile/Email">
+                      </div>
+                    <div>
+                        <input type="password" name="password" class="in" placeholder="Password">
+                    </div>
+                    <div>
+                      <input type="checkbox" style="height:12px; width:10px; margin-top:2%;"/> <span style="color:white;">Remember me</span>
+                    </div>
+                    <div>
+                        <center><input type="submit" name="" class="btn btn-success" value="Login"></center>
+                    </div>
+                    <div>
+                        <br />
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    
+                </form>
+            </center>
+        </div>
+        <div class="col-sm-4"></div>
+    </div>
+</div>

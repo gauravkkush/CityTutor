@@ -1,0 +1,281 @@
+﻿@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/general.cshtml";
+}
+<style>
+    .head {
+        min-height:50px;
+        background:url('../Content/images/b6.jpg');
+        background-attachment:fixed;
+    }
+    .head1 {
+        min-height:50px;
+        background:rgba(0,0,0,.65);
+        color:white;
+        text-align:center;
+        font-size:25px;
+        padding-top:0.5%;
+    } 
+    .notification{
+                min-height: 20px;
+                margin-top:.5%;
+            }
+    .noti{
+                line-height: 30px;
+                color: black;
+                font-weight: bold; 
+                font-size: 22px;
+                border: 2px solid white;
+            }
+            .notitext{
+                line-height: 30px;
+                color: white;
+                font-weight: bold; font-size: 20px;
+                border: 2px solid white;
+            }
+    .main 
+    {
+        background:#d8c4c4;
+        font-family:'Adobe Arabic';
+    }
+            .slider {
+            min-height: 500px;
+            background: url('../content/images/p7.jpg');
+            background-size: 100% 100%;
+            background-attachment: fixed;
+        }
+        .inner {
+            min-height: 500px;
+            background: rgba(0, 0, 0, 0.5);
+            font-size: 60px;
+            color: white;
+            text-align: center;
+            font-family: Impact;
+            padding-top: 5%;
+        }
+
+            .inner span {
+                color: red;
+            }
+
+        .slider p {
+            font-size: 30px;
+            font-family:sans-serif;
+            color: white;
+        }
+        .services {
+            min-height: 300px;
+            background: #e7eaed;
+        }
+
+        .main {
+            min-height: 600px;
+            background: white;
+        }
+        #btn {
+            min-height: 35px;
+            width: 100px;
+            text-decoration: none;
+            border: 1px double red;
+            border-radius: 30%;
+            padding: .5%;
+            background: red;
+            color: black;
+            font-family: 'Comic Sans MS';
+            font-size: 20px;
+            line-height: 35px;
+            text-align: center;
+        }
+        .s
+        {
+            background:rgba(12, 111, 68, 1.00);
+            min-height:220px;
+            color:white;
+            text-align:center;
+            box-shadow:4px 4px 10px black;
+            margin-top:-5%;
+            margin-bottom:5%;
+        }
+        .s1
+        {
+            background:white;
+            min-height:220px;
+            text-align:center;
+            box-shadow:4px 4px 10px black;
+            margin-top:-5%;
+            margin-bottom:5%;
+        }
+            .services .fa {
+                font-size:60px;
+                margin-top:15%;
+            }
+        .fb {
+            min-height: 300px;
+            background: url('../Content/images/b6.jpg');
+            background-attachment: fixed;
+            background-size: 100% 100%;
+        }
+
+        .fb1 {
+            min-height: 300px;
+            background: rgba(0, 0, 0, 0.57);
+            color: white;
+            padding: 0% 35%;
+        }
+            .search 
+    {
+        min-height:170px;
+        background:transparent;
+        text-align:center;
+        border:1px solid black;
+        border-radius:5px;
+    }
+                .search input, .search select {
+                    font-size:20px;
+                    height:35px;
+                }
+        .about h1
+        {
+            background:#69054f;
+            color:white;
+            border:#69054f;
+        }
+        .about p 
+        {
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+</style>
+            <div class="col-sm-12 head">
+            <div class="row">
+                <div class="col-sm-12 head1"><span class="fa fa-home"style="color:red;"> </span> HO<Span style="color:red;">ME</Span></div>
+    
+            </div>
+            </div><div class="col-sm-12 notification">
+                    <div class="row">
+                        <div class="col-sm-2 noti"><i class=" fa fa-bell"> </i> NOTIFICATION</div>
+                        <div class="col-sm-10 notitext">
+                            @Html.Raw(ViewBag.news)
+                        </div>
+                    </div>
+                </div>
+            <div class="col-sm-12 slider">
+                <div class="row">
+                    <div class="col-sm-12 inner">
+                      Wel<span>come</span> T<span>o</span> Tut<span>or's</span> Ad<span>da</span>
+                        <p>As the internet is growing faster then why to waste time in searching of a tutor offline.<br />
+                        Here we are to help you to find the best for you and your loved one.<br />
+                            Sign Up Here and start finding best tutors arround you in your city.
+                        </p>
+                        <a href="register" id="btn">SignUp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 services">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <div class="col-sm-12">
+                        <div class="col-sm-4 s">
+                            <span class="fa fa-book"></span>
+                            <div class="h2 text-center">Quality Education</div>
+                        </div>
+                        <div class="col-sm-4 s1">
+                            <span class="fa fa-money"></span>
+                            <div class="h2 text-center">Low Cost</div>
+                        </div>
+                        <div class="col-sm-4 s">
+                            <span class="fa fa-list"></span>
+                            <div class="h2 text-center">Best Services</div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12">
+                        <div class="col-sm-4 s1">
+                            <span class="fa fa-home"></span>
+                            <div class="h2 text-center">Home Tutions</div>
+                        </div>
+                        <div class="col-sm-4 s">
+                            <span class="fa fa-tags"></span>
+                            <div class="h2 text-center">Online Classes</div>
+                        </div>
+                        <div class="col-sm-4 s1">
+                            <span class="fa fa-users"></span>
+                            <div class="h2 text-center">Full Satisfication</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div>
+            </div>
+            <div class="col-sm-12 main">
+                <div class="row">
+                    <div class="col-sm-12 search">
+                        <h1  font-family:'Adobe Arabic';">FIND THE BEST FOR YOU</h1>
+                        <div class="row" style="padding-top:1%;">
+                            <div class="col-sm-1"></div>
+                            <div class="col-sm-3 form-group">
+                                <select style="height:30px; width:300px;" class="form-control">
+                                                <option>Class</option>
+                                                <option>1</option>
+                                                <option>2</option>
+                                                <option>3</option>
+                                                <option>4</option>
+                                                <option>5</option>
+                                                <option>6</option>
+                                                <option>7</option>
+                                                <option>8</option>
+                                                <option>9</option>
+                                                <option>10</option>
+                                                <option>11</option>
+                                                <option>12</option>
+                                                <option>Diploma</option>
+                                                <option>Graduation</option>
+                                                <option>Post Graduation</option>
+                                                <option>PG Diploma</option>
+                                                <option>Comptition Exams</option>
+                                                <option>Engineering Entrance Exams</option>
+                                                <option>Medical Entrance Exams</option>
+                                                <option>CA Entrance Exams</option>
+                                                <option>Others</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3 form-group">
+                                <select style="height:30px; width:300px;" class="form-control">
+                                    <option>Select City</option>
+                                    <option>Lucknow</option>
+                                    <option>Shahjahanpur</option>
+                                    <option>Bareilly</option>
+                                    <option>Rampur</option>
+                                    <option>Sitapur</option>
+                                    <option>Kanpur</option>
+                                    <option>New Delhi</option>
+                                    <option>Khiri</option>
+                                    <option>Farrukhabad</option>
+                                    <option>Hardoi</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3 form-group">
+                                <input type="text" placeholder="Locality" class="form-control" style="height:30px; width:300px;" required/>
+                            </div>
+                            <div class="col-sm-1 form-group">
+                                <button class="fa fa-search btn btn-success" style="height:30px; width:100px; display:inline;"> Search</button>
+                            </div>
+                            <div class="col-sm-1 form-group"></div>
+                        </div>
+                    </div>
+           <div class="col-sm-12 about">
+                <center>
+                    <h1><b>ABOUT <b style="color:#ff8800;">US</b></b></h1>
+                    <p>Tutor's Adda was an idea which came in my mind when I was a student. Now a days it is difficult to find right tutors in a city easily. It is one of those several problems that students usually faces during their student life. Specially for those who are new to a town. I myself faced so much problem during my 1st year when I was in a new city. That's why I started working on such a project like this so that I can help student like me who are facing the same problem. Not only student but tutors are also facing this kind of problems. This is a platform which provides you the way to find the right person to teach you what you want to learn. We are here to make sure that none of you guys will be disappointed by our side. We’ll provide you the best service and quality education that will laid your to the brightness. For any kind of quaries and help you can contact us by the link given below in the footer, we'll be available for you asap. Naming this platform "Tutor's Adda" has it's own story.</p>
+                </center>
+            </div>
+                </div>
+            </div>
+            <div class="col-sm-12 fb">
+                <div class="row">
+                    <div class="col-sm-12 fb1">
+                        <center>
+                            <div class="h2 text-center">Subscribe To Our Facebook Page</div>
+                            <iframe src="https://www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Ftechpilelko&amp;width&amp;height=258&amp;colorscheme=dark&amp;show_faces=true&amp;header=false&amp;stream=false&amp;show_border=false&amp;appId=295612883878937" scrolling="yes" frameborder="0" width="100%" style="border:none; overflow:hidden; height:258px;" allowtransparency="true" style="margin:0px auto;"></iframe>
+                        </center>
+                    </div> 
+                </div>
+            </div>

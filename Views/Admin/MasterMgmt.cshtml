@@ -1,0 +1,53 @@
+﻿@{
+    ViewBag.Title = "MasterMgmt";
+    Layout = "~/Views/Shared/ganraladmin.cshtml";
+}
+<style>
+    .head 
+        {
+            min-height:50px;
+            background:url('../Content/images/b6.jpg');
+            background-attachment:fixed;
+        }
+            .head1 
+            {
+                min-height:50px;
+                background:rgba(0,0,0,.65);
+                color:white;
+                text-align:center;
+                font-size:35px;
+                padding-top:0.5%;
+            }
+</style>
+<div class="col-sm-12 head">
+<div class="row">
+    <div class="col-sm-12 head1">MASTER<b style="color:red;"><span class="fa fa-pencil"></span></b> MANAGEMENT</div>   
+</div>
+</div>
+<div class="col-sm-12">
+        <table class="table table-hover" border="1">
+            <tr>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>PASSWORD</th>
+                <th>MOBILE NO</th>
+                <th>AGE</th>
+                <th>TUTION LEVEL</th>
+                <th>MEDIUM</th>
+                <th>CITY</th>
+                <th>AREA</th>
+                <th>EXPERIENCE</th>
+                <th>LANGUAGE</th>
+                <th>STATUS</th>
+                <th>QUALIFICATION</th>
+                <th>SESSION</th>
+                <th>MODE</th>
+                <th>PIC</th>
+                <th>REG. DATE</th>
+                <th>GENDER</th>
+                <th>DELETE</th>
+                <th>PROFILE</th>
+            </tr>
+            @Html.Raw(ViewBag.msg)
+        </table>
+    </div>

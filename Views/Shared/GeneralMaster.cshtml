@@ -1,0 +1,226 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/css/bootstrap-theme.min.css" rel="stylesheet" />
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/Content/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="~/Content/js/jquery.js"></script>
+    <script src="~/Content/js/bootstrap.min.js"></script>
+    <title>@ViewBag.Title</title>
+    <style>
+        .top {
+            min-height: 45px;
+            background: #e7eaed;
+            text-align: center;
+            line-height: 45px;
+            font-size: 20px;
+            font-family: 'Monotype Corsiva';
+        }
+
+            .top .fa {
+                height: 35px;
+                width: 35px;
+                padding-top: 1.5%;
+                font-size: 1em;
+                margin-left: 3%;
+                border-radius:50%;
+            }
+
+        .header 
+        {
+            background:#fbfbfb;
+            background:black;
+        }
+        .logo {
+            font-family: 'Monotype Corsiva';
+            font-size: 35px;
+            color: white;
+        }
+
+            .logo span {
+                color: red;
+            }
+            .logo a , .logo a:hover
+            {
+                text-decoration:none;
+                color:white;
+            }
+        .menu {
+            display:inline;
+            height:40px;
+        }
+        #menu1 {
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            text-align:center;
+        }
+            #menu1 ul li a {
+                text-decoration:none;
+                color:white;
+            }
+            #menu1 ul li a:hover {
+                color: white;
+                transition: all ease 1s;
+                background:#e60651;
+                border-radius:10px;
+            }
+        .ufooter 
+        {
+            min-height:300px;
+            background:black;
+            margin-top:0.2%;
+        }
+       .contact, .blogs {
+            min-height:260px;
+            width:100%;
+            background:rgba(255,255,255,0.6);
+            margin:5%;
+        }
+        .contact, .blogs h1 
+        {
+            color:black;
+            font-family: 'Comic Sans MS';
+            font-size:30px;
+        }
+        .blg 
+        {
+            padding:5%;
+        }
+            .blg a 
+            {
+                text-decoration:none;
+                font-size:20px;
+                font-family:monospace;
+                text-align:center;
+            }
+            .blg a:hover
+            {
+                background:red;
+                border:1px solid red;
+                border-radius:20px;
+                color:white;
+            }
+        iframe 
+        {
+            min-height:300px;
+            width:100%;
+            padding:5%;
+            border:2px solid black;
+        }
+        .bfooter
+        {
+            min-height:50px;
+            background:black;
+            text-align: center;
+            color:white;
+            margin-top:0.2%;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="col-sm-12 outer">
+        <div class="row">
+            <div class="col-sm-12 top">
+                <div class="col-sm-4">
+                    <a href="mailto:kkushgaurav@gmail.com?subject= Query Regarding Website"><span class="fa fa-envelope-o"></span></a>
+                    <span class="fa fa-phone"></span>+91 9565848460
+                </div>
+                <div class="col-sm-4">FIND BEST TUTORS IN THE CITY</div>
+                <div class="col-sm-4">
+                    <a href="" class="fa fa-facebook" style="color:blue; border:1px solid blue;"></a>
+                    <a href="" class="fa fa-instagram" style="color:rgb(220, 10, 222); border:1px solid rgb(220, 10, 222);"></a><span ></span>
+                    <a href="" class="fa fa-youtube-play" style="color:red; border:1px solid red;"></a>
+                    <a href="" class="fa fa-whatsapp" style="color:green; border:1px solid green;"></a>
+                    <a href="" class="fa fa-twitter" style="color:skyblue; border:1px solid skyblue;"></a>
+                    <a href="" class="fa fa-github" style="color:black; border:1px solid black;"></a>
+                </div>
+            </div>
+            <div class="col-sm-12 header">
+                <div class="col-sm-3 logo">
+                    <a href="Index"><span class="fa fa-graduation-cap"></span>Tut<span>ors</span>Ad<span>da</span></a>
+                </div>
+                <div class="col-sm-9 menu">
+                    <nav class="navbar navbar-default" id="menu1">
+                          <div class="container-fluid">
+                              <div class="navbar-header">
+                                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                  </button>
+                                </div>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                              <ul class="nav navbar-nav navbar-right">
+                                <li><a href="~/Master/Index"><span class="fa fa-home"></span> DASHBOARD</a></li>
+                                  <li><a href="tutionLeads"><SPAN class="fa fa-search"></SPAN> TUTION LEADS</a></li>
+                                  <li><a href="RequestSent"><SPAN class="fa fa-generate"></SPAN> REQUEST SENT</a></li>
+                                  <li><a href="CurrentStatus"><SPAN class="fa fa-"></SPAN> CURRENT STATUS</a></li>
+                                  <li><a href="ChangePassword"><SPAN class="fa fa-key"></SPAN> CHANGE PASSWORD</a></li>
+                                  <li><a href="LogOut"><SPAN class="fa fa-lock"></SPAN> LOGOUT</a></li>
+                              </ul>
+                            </div><!-- /.navbar-collapse -->
+                          </div><!-- /.container-fluid -->
+                    </nav>
+                </div>
+            </div>
+            <div class="col-sm-12 content">
+                <div class="row">
+            @RenderBody()
+                    </div>
+                </div>
+            <div class="col-sm-12 ufooter">
+                <div class="col-sm-4">
+                    <div class="col-sm-12 contact">
+                        <div class="row">
+                            <h1 class="text-center">CONTA<span style="color:red;">CT US</span></h1>
+                        </div>
+                        <div class="row blg">
+                            <ul>
+                                <span class="fa fa-envelope-o"></span><a href="mailto:kkushgaurav@gmail.com?subject= Query Regarding Website"> kkushgaurav@gmail.com</a><br />
+                                <span class="fa fa-map-marker"></span> <a href="https://goo.gl/maps/uShPNqXK5BEbt7gQA" target="_blank" >GTI, SH 29, Lalpur, Uttar Pradesh 242001</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="col-sm-12 blogs">
+                        <div class="row">
+                            <h1 class="text-center">OUR<span style="color:red;"> BLOGS</span></h1>
+                        </div>
+                        <div class="row blg">
+                            <ul>
+                                <li><a href="#">HOW TO FIND A TUTOR</a><br /></li>
+                                <li><a href="#">TUITION SKILLS</a><br /> </li>
+                                <li><a href="#">TUTORS NEAR YOU</a><br /></li>
+                                <li><a href="#">PRIMARY SKILLS</a><br /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3527.8499746596985!2d79.87217451458623!3d27.845149126030424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399fbc62950c4581%3A0x96c716da0fd888f8!2sGovernment+Polytechnic+Shahjahanpur!5e0!3m2!1sen!2sin!4v1564315502219!5m2!1sen!2sin" width="300" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-sm-12 bfooter" style="text-align:center;">
+                <div class="row" style="text-align:center;">
+                    <div class="col-sm-4" style="padding-top:1%; text-decoration:none; float:left; display:inline;">
+                        Copyright &copy;2019, Techpile Technologies PVT. LTD.
+                    </div>
+                    <div class="col-sm-4" style="padding-top:1%; text-decoration:none; float:left; display:inline;">
+                        <a href="#">Terms Of Use.</a> | <a href="#">Privacy Policy-Revised</a> | All Rights Reserved
+                    </div>
+                    <div class="col-sm-4" style="padding-top:1%; text-decoration:none; float:left; display:inline;">
+                        Designed & Devloped By :<a href="mailto:kkushgaurav@gmail.com?subject= Query Regarding Website"> Gaurav Kushwaha</a> <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

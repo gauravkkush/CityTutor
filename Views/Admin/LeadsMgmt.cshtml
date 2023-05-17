@@ -1,0 +1,44 @@
+﻿@{
+    ViewBag.Title = "LeadsMgmt";
+    Layout = "~/Views/Shared/ganraladmin.cshtml";
+}
+<style>
+    .head 
+        {
+            min-height:50px;
+            background:url('../Content/images/b6.jpg');
+            background-attachment:fixed;
+        }
+            .head1 
+            {
+                min-height:50px;
+                background:rgba(0,0,0,.65);
+                color:white;
+                text-align:center;
+                font-size:35px;
+                padding-top:0.5%;
+            }
+</style>
+<div class="col-sm-12 head">
+<div class="row">
+    <div class="col-sm-12 head1">LEADS<b style="color:red;"><span class="fa fa-user"></span></b> MANAGEMENT</div>   
+</div>
+</div>
+<div class="col-sm-12">
+        <table class="table table-hover">
+            <tr>
+                <th>SR NO</th>
+                <th>TYPE</th>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>MOBILE</th>
+                <th>CLASS</th>
+                <th>MEDIUM</th>
+                <th>CITY</th>
+                <th>AREA</th>
+                <th>DATE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; TIME</th>
+                <th>DELETE</th>
+            </tr>
+            @Html.Raw(ViewBag.msg)
+        </table>
+    </div>

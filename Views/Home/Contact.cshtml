@@ -1,0 +1,114 @@
+﻿@{
+    ViewBag.Title = "Contact";
+    Layout = "~/Views/Shared/general.cshtml";
+}
+<style>
+    .a {
+        min-height:250px;
+        background:#808080;
+        margin-top:6%;
+        text-align:center;
+        padding:5%;
+        font-size:22px;
+    }
+    .a1 {
+         min-height:250px;
+        background:#f1f3f4;
+        margin-top:5%;
+          text-align:center;
+        padding:5%;
+         font-size:22px;
+    }
+    .contactus {
+        min-height:500px;
+        background:#d0d1d7;
+        padding:4%;
+        margin-top:2%;
+        background:#f1f3f4;
+        z-index:10;
+        box-shadow:5px 5px 10px black;
+    }
+    .btn {
+        background:#ff6a00;
+        min-height:50px;
+          border-radius:0px;
+          width:30%;
+          color:white;
+          border:none;
+          margin-top:2%;
+    }
+    .txt {
+        min-height:50px;
+        border-radius:0px;
+    }
+    .txta {
+        min-height:90px;
+        border-radius:0px;
+
+    }
+    .head {
+        min-height:50px;
+        background:url('../Content/images/b6.jpg');
+        background-attachment:fixed;
+    }
+    .head1 {
+        min-height:50px;
+        background:rgba(0,0,0,.65);
+        color:white;
+        text-align:center;
+        font-size:25px;
+        padding-top:0.5%;
+    }
+    .a1 .fa, .a .fa {
+        font-size:70px;
+    }
+    .gmap {
+        background:white;
+        padding:2%;
+        margin-top:-10%;
+    }
+</style>
+<div class="col-sm-12 head">
+<div class="row">
+    <div class="col-sm-12 head1">CONTACT <b style="color:red;">US <span class="fa fa-map-marker"></span></b></div>
+    
+</div>
+</div>
+<div class="col-sm-12 ">
+    <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+    <div class="col-sm-4 a">
+        <span class="fa fa-mobile"></span><br />
+        +91 9565848460<br />
+        +91 7007862795
+
+    </div>
+      <div class="col-sm-4 a1">
+            <span class="fa fa-map-marker"></span><br />
+          GTI Shahjahanpur<br /> Kant Road Shahjahanpur
+           242001
+      </div>
+      <div class="col-sm-4 a">
+           <span class="fa fa-envelope"></span><br />
+         admin@tutorsadda.cf<br /> help@tutorsadda.cf
+      </div>
+          </div>
+    <div class="col-sm-1"></div>
+</div>
+<div class="col-sm-12">
+          <div class="col-sm-3"></div>
+          <div class="col-sm-6 contactus">
+              <form method="post" class="form-group">
+                  NAME<input type="text" name="name" class="form-control txt" /><br />
+                  EMAIL<input type="email" name="email" class="form-control txt" /><br />
+                  MOBILE<input type="tel" name="mob" class="form-control txt" /><br />
+                  MESSAGE<textarea class="form-control txta" name="msg"></textarea><br />
+                  <input type="submit" class="btn" />
+              </form>
+          </div>
+          <div class="col-sm-3"></div>
+</div>
+
+<div class="col-sm-12 gmap">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3527.8499746596985!2d79.87217451458623!3d27.845149126030424!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399fbc62950c4581%3A0x96c716da0fd888f8!2sGovernment+Polytechnic+Shahjahanpur!5e0!3m2!1sen!2sin!4v1564315502219!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>

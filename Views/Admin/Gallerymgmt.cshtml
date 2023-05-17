@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "Gallerymgmt";
+    Layout = "~/Views/Shared/ganraladmin.cshtml";
+}
+<div class="col-sm-12">
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4 noti">
+        <div class="h1 text-center"></div>
+        <form action="Gallerymgmt" method="post" enctype="multipart/form-data">
+            <input type="text" class="form-control" name="name" placeholder="IMAGE NAME"/><br />
+            <input type="file" class="form-control" name="image" /><br />
+            <input type="submit" class="btn btn-success" value="Add Image" />
+        </form> 
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+<div class="col-sm-12" style="margin-top:2%;">
+    <table class="table table-hover" border="1">
+            <tr>
+                <th>SR NO</th>
+                <th>IMAGE NAME</th>
+                <th>IMAGE</th>
+                <th>DELETE</th>
+            </tr>
+            @Html.Raw(ViewBag.image)
+    </table>
+</div>

@@ -1,0 +1,34 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>LogOut</title>
+    <script>
+        function logout() {
+            window.history.forward;
+            window.setTimeout("window.location.href='../Home/Index'", 2000);
+        }
+    </script>
+    <style>
+        body 
+        {
+            background:#f0f0fc;
+        }
+        img {
+            margin: 14% auto;
+        }
+    </style>
+</head>
+<body onload="logout()">
+    <div>
+       <center>
+           <img src="~/Content/images/loader.gif"/>
+       </center>
+    </div>
+</body>
+</html>

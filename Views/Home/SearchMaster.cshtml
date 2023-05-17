@@ -1,0 +1,111 @@
+﻿@{
+    ViewBag.Title = "SearchMaster";
+    Layout = "~/Views/Shared/general.cshtml";
+}
+
+<style>
+    .head {
+        min-height:50px;
+        background:url('../Content/images/b6.jpg');
+        background-attachment:fixed;
+    }
+    .head1 {
+        min-height:50px;
+        background:rgba(0,0,0,.65);
+        color:white;
+        text-align:center;
+        font-size:25px;
+        padding-top:0.5%;
+    }
+    .search 
+    {
+        min-height:170px;
+        background:rgba(0, 0, 0, 0.93);
+        text-align:center;
+    }
+    .request 
+    {
+        min-height:40px;
+    }
+</style>
+<div class="col-sm-12 head">
+<div class="row">
+    <div class="col-sm-12 head1">SEARCH MASTER<b style="color:red;"> / </b>SEND REQUEST</div>
+</div>
+</div>
+<div class="col-sm-12 search">
+    <h1 style="color:white; font-family:'Adobe Arabic';">FIND THE BEST FOR YOU</h1>
+    <hr style="color:white;"/>
+    <div class="row" style="padding-top:1%;">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-3 form-group">
+            <select style="height:30px; width:300px;"name="cls" class="form-control">
+                            <option>Class</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>Diploma</option>
+                            <option>Graduation</option>
+                            <option>Post Graduation</option>
+                            <option>PG Diploma</option>
+                            <option>Comptition Exams</option>
+                            <option>Engineering Entrance Exams</option>
+                            <option>Medical Entrance Exams</option>
+                            <option>CA Entrance Exams</option>
+                            <option>Others</option>
+            </select>
+        </div>
+        <div class="col-sm-3 form-group">
+            <select style="height:30px; width:300px;" name="city" class="form-control">
+                <option>---------City--------</option>
+                <option>Lucknow</option>
+                <option>Shahjahanpur</option>
+                <option>Bareilly</option>
+                <option>Rampur</option>
+                <option>Sitapur</option>
+                <option>Kanpur</option>
+                <option>New Delhi</option>
+                <option>Khiri</option>
+                <option>Farrukhabad</option>
+                <option>Hardoi</option>
+            </select>
+        </div>
+        <div class="col-sm-3 form-group">
+            <input type="text" placeholder="Locality" name="area" class="form-control" style="height:30px; width:300px;" required/>
+        </div>
+        <div class="col-sm-1 form-group">
+            <button class="fa fa-search btn btn-success" style="height:30px; width:100px; display:inline;"> Search</button>
+        </div>
+        <div class="col-sm-1 form-group"></div>
+    </div>
+</div>
+<div class="col-sm-12 request" style="margin-top:1%;">
+    <table class="table table-hover" border="1">
+            <tr>
+                <th>NAME</th>
+                <th>EMAIL</th>
+                <th>MOBILE NO</th>
+                <th>AGE</th>
+                <th>TUTION LEVEL</th>
+                <th>MEDIUM</th>
+                <th>CITY</th>
+                <th>AREA</th>
+                <th>EXPERIENCE</th>
+                <th>LANGUAGE</th>
+                <th>STATUS</th>
+                <th>QUALIFICATION</th>
+                <th>SESSION</th>
+                <th>MODE</th>
+            </tr>
+            @Html.Raw(ViewBag.request)
+        </table>
+</div>

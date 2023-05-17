@@ -1,0 +1,56 @@
+﻿@{
+    ViewBag.Title = "profile";
+    Layout = "~/Views/Shared/general.cshtml";
+}
+<style>
+        .head {
+        min-height:50px;
+        background:url('../Content/images/b6.jpg');
+        background-attachment:fixed;
+    }
+    .head1 {
+        min-height:50px;
+        background:rgba(0,0,0,.65);
+        color:white;
+        text-align:center;
+        font-size:25px;
+        padding-top:0.5%;
+    }
+    .img img {
+        min-height:200px;
+        margin-top:10%;
+        border:1px solid transparent;
+        border-radius:50%;
+    }
+    .info {
+        min-height:200px;
+        margin-top:5%;
+        margin-bottom:5%;
+    }
+    p {
+        font-size:25px;
+        color:#941111;
+    }
+    .info span {
+        font-size:20px;
+    }
+   .img a {
+        text-decoration-line:none;
+        text-decoration:none;
+    }
+    .img .fa {
+        font-size:25px;
+        color:#941111;
+    }
+</style>
+<div class="col-sm-12 head">
+<div class="row">
+    <div class="col-sm-12 head1">Tutor's <span style="color:red;">Profile</span></div>   
+</div>
+</div>
+<div class="col-sm-12">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8" style="margin-top:1%; margin-bottom:1%; background:gray;">
+        <div class="col-sm-12">
+            @Html.Raw(ViewBag.profile)
+        </div></div><div class="col-sm-2"></div></div>
